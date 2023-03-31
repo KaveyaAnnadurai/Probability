@@ -28,6 +28,7 @@ public class ProbabilityChecker {
         }
 
 
-
-
+        public ProbabilityChecker complimentOf(ProbabilityChecker probabilityOfEvent) {
+        return  new ProbabilityChecker(1 - probabilityOfEvent.probabilityValue);
+        }
 }
