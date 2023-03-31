@@ -22,6 +22,10 @@ public class ProbabilityChecker {
                         return true;
                 return false;
         }
+        ProbabilityChecker and(ProbabilityChecker event){
+                return new ProbabilityChecker(this.probabilityValue *event.probabilityValue);
+
+        }
 
 
 
